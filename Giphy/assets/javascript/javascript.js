@@ -2,7 +2,7 @@ $(document).ready(function () {
     var sports = ["Football", "Basketball", "Baseball", "Hockey", "Rugby", "Golf", "Fishing", "Lacrosse", "Skiing"];
 
     function makeButtons() {
-        $("#buttonDiv").empty();
+       ("#buttonDiv").empty();
         for (var i = 0; i < sports.length; i++) {
             var sportsButton = $("<button>");
             sportsButton.addClass("sport");
@@ -44,7 +44,7 @@ $(document).ready(function () {
             console.log(sport);
             getGif();
             function getGif() {
-                var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + sport + "&api_key=4rSvlLwWpKB05KtbbOtyVH1eI47V0UxD&limit=5";
+                var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + sport + "&api_key=4rSvlLwWpKB05KtbbOtyVH1eI47V0UxD&limit=10";
 
                 $.ajax({
 
